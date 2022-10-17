@@ -21,7 +21,6 @@ import java.util.Objects;
  */
 public class JFreeGanttChart implements Observer {
     JFreeChart chart;
-
     public ChartViewer getViewer() {
         return viewer;
     }
