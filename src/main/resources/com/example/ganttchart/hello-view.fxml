@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="mainPane" prefHeight="600.0" prefWidth="1100.0" stylesheets="@Gantt.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.ganttchart.HelloController">
+     <columnConstraints>
+         <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+     </columnConstraints>
+     <rowConstraints>
+         <RowConstraints maxHeight="21.8" minHeight="16.800000953674317" prefHeight="21.8" vgrow="SOMETIMES" />
+         <RowConstraints maxHeight="1.7976931348623157E308" minHeight="10.0" vgrow="SOMETIMES" />
+     </rowConstraints>
+      <children>
+         <SplitPane fx:id="Split_Pane" prefHeight="313.0" prefWidth="1100.0" GridPane.rowIndex="1">
+             <items>
+                 <TableView fx:id="Left_Table" minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                     <columns>
+                         <TableColumn fx:id="Left_ID" prefWidth="75.0" text="ID" />
+                         <TableColumn fx:id="Left_Name" prefWidth="75.0" text="Имя" />
+                         <TableColumn fx:id="Left_NumberOfDuration" prefWidth="75.0" text="Длительность" />
+                         <TableColumn fx:id="Left_MS" prefWidth="75.0" text="СИ" />
+                         <TableColumn fx:id="Left_StartDate" prefWidth="75.0" text="Начало" />
+                         <TableColumn fx:id="Left_EndDate" prefWidth="75.0" text="Окончание" />
+                         <TableColumn fx:id="Left_Predecessor" prefWidth="75.0" text="Предшественник" />
+                     </columns>
+                     <columnResizePolicy>
+                         <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                 </TableView>
+      
+             </items>
+         </SplitPane>
+      </children>
+ </GridPane>
